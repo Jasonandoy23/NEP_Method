@@ -1,0 +1,31 @@
+#include "NEP_Process\\NEP Layout.res"
+global device Nimbus ("NEP_Process\\NEP Layout.lay", "Nimbus", hslTrue);
+/* {{ 2 "LibraryInsertLine" "" */ // }} ""
+/* {{ 2 "VariableInsertLine" "" */ // }} ""
+// {{ 2 "TemplateIncludeBlock" ""
+ namespace _Method { #include "NEP_Process\\HSLMETEDLib.hs_" } 
+ namespace _Method { #include "NEP_Process\\HSLMECCLib.hs_" } 
+// }} ""
+// {{{ 2 "LocalSubmethodInclude" ""
+ namespace _Method {  #include __filename__ ".sub"  } 
+// }} ""
+/* {{ 2 "ProcessInsertLine" "" */ // }} ""
+// {{{ 5 "main" "Begin"
+namespace _Method { method main(  ) void {
+// }} ""
+// {{ 5 "main" "InitLocals"
+// }} ""
+// {{ 2 "AutoInitBlock" ""
+::RegisterAbortHandler( "OnAbort");
+// }} ""
+// {{ 1 1 0 "94c6e7f0_4222_4cf5_b23f9f06efeffb99" "Nimbus:{ADD3B1DB-2B12-4A5C-BB98-FF40DE7ABDC4}"
+{
+	Nimbus._ADD3B1DB_2B12_4A5C_BB98_FF40DE7ABDC4("94c6e7f0_4222_4cf5_b23f9f06efeffb99"); // Initialize
+}
+// }} ""
+// {{ 2 "AutoExitBlock" ""
+// }} ""
+// {{{ 5 "main" "End"
+} }
+// }} ""
+// $$author=Jason-Win7$$valid=0$$time=2021-01-20 00:41$$checksum=3e7a8de2$$length=089$$
